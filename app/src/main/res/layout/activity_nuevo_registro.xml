@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:stretchColumns="*" >
+
+    <TableRow>
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:text="Nuevo Registro:" />
+    </TableRow>
+
+    <TableRow>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input1"
+            android:layout_column="0"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="30"
+            app:endIconMode="clear_text"
+            app:helperTextTextColor="@color/teal_700"
+            app:startIconDrawable="@drawable/ic_baseline_group_24"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense" >
+
+            <EditText
+                android:id="@+id/nombreEquipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre del Equipo"
+                android:maxLength="30"
+                android:imeOptions="actionNext" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </TableRow>
+    <View
+        android:layout_height="4dip"
+        android:background="#3b83bd" />
+
+    <TableRow>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input2"
+            android:layout_column="0"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="30"
+            app:endIconMode="clear_text"
+            app:helperTextTextColor="@color/teal_700"
+            app:startIconDrawable="@drawable/ic_baseline_person_24"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense" >
+
+            <EditText
+                android:id="@+id/nombreCapitan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre del Capitán"
+                android:maxLength="30"
+                android:imeOptions="actionNext" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </TableRow>
+    <View
+        android:layout_height="4dip"
+        android:background="#3b83bd" />
+
+    <TableRow>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input3"
+            android:layout_column="0"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:prefixText="+52 1 "
+            app:counterEnabled="true"
+            app:counterMaxLength="10"
+            app:endIconMode="clear_text"
+            app:helperTextTextColor="@color/teal_700"
+            app:startIconDrawable="@drawable/ic_baseline_phone_android_24"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense" >
+
+            <EditText
+                android:id="@+id/telefonoCapitan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Telefono del Capitán"
+                android:maxLength="10"
+                android:imeOptions="actionNext"
+                android:inputType="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </TableRow>
+    <View
+        android:layout_height="4dip"
+        android:background="#3b83bd" />
+
+    <TableRow>
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:text="Selecciona la categoría a jugar:" />
+    </TableRow>
+
+    <TableRow>
+        <RadioGroup
+            android:id="@+id/categoria"
+            android:layout_column="0"
+            android:layout_marginTop="10dp" >
+
+            <RadioButton
+                android:id="@+id/masculino"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:checked="false"
+                android:text="Masculino" />
+
+            <RadioButton
+                android:id="@+id/femenino"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:checked="false"
+                android:text="Femenino" />
+        </RadioGroup>
+    </TableRow>
+    <View
+        android:layout_height="4dip"
+        android:background="#3b83bd"
+        android:layout_marginTop="5dp" />
+
+    <TableRow>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input4"
+            android:layout_column="0"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:endIconMode="clear_text"
+            app:counterEnabled="true"
+            app:counterMaxLength="30"
+            app:helperTextTextColor="@color/teal_700"
+            app:startIconDrawable="@drawable/ic_baseline_color_lens_24"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense" >
+
+            <AutoCompleteTextView
+                android:id="@+id/uniformeColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Uniforme (Color)"
+                android:maxLength="30"
+                android:imeOptions="actionNext" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </TableRow>
+    <View
+        android:layout_height="4dip"
+        android:background="#3b83bd" />
+
+    <TableLayout
+        android:id="@+id/botones"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:stretchColumns="*" >
+
+        <TableRow>
+            <Button
+                android:id="@+id/btn4"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:text="Guardar" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:text="Regresar al Menu" />
+        </TableRow>
+
+    </TableLayout>
+
+</TableLayout>
