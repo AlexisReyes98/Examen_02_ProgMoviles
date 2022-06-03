@@ -8,5 +8,5 @@ móvil
 
 Aplicación para móviles que administre un grupo de productos bajo una lista y la lista sea 
 guardada en un archivo de tipo json, además se tenga la opción de leer el archivo json guardado previamente. 
-Recuerda que la aplicación es conforme a tu negocio que tengas seleccionado. En este ejemplo del examen se 
-usará una Librería con el producto libro
+
+Negocio asignado: Registro Deportivo.
